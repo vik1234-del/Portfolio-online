@@ -14,7 +14,7 @@
         src="/WhatsApp Image 2022-08-03 at 5.30.32 PM.jpeg"
       /> -->
     </header>
-    <nav>
+    <nav id="sidebar">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#about-me">About Me</a></li>
@@ -144,5 +144,14 @@
     <footer id="contact">
       <p>☎: 09044848699 | 📧: okolodubem9@gmail.com</p>
     </footer>
+
+    <script>
+      const sidebarToggle = document.querySelector(".sidebar-toggle-btn");
+      const sidebar = document.querySelector("#sidebar");
+
+      sidebarToggle.addEventListener("click", function () {
+        sidebar.classList.toggle("open");
+      });
+    </script>
   </body>
 </html>
